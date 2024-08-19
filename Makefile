@@ -2,7 +2,7 @@ export GOPRIVATE=github.com/ecumenos-social
 export SHELL=/bin/sh
 
 .PHONY: all
-all: hooks submodules tidy check fmt lint test tidy
+all: hooks tidy check fmt lint test tidy
 
 .PHONY: hooks
 hooks: ## Git hooks

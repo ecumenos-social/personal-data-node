@@ -24,7 +24,7 @@ var _ pbv1.CoreServiceServer = (*Handler)(nil)
 type handlerParams struct {
 	fx.In
 
-	Config *toolkitfx.NetworkWardenAppConfig
+	Config *toolkitfx.PersonalDataNodeAppConfig
 	Logger *zap.Logger
 }
 
@@ -32,7 +32,7 @@ func NewHandler(params handlerParams) *Handler {
 	return &Handler{
 		logger: params.Logger,
 
-		networkWardenID: params.Config.ID,
+		networkWardenID: params.Config.NetworkWardenID,
 	}
 }
 
