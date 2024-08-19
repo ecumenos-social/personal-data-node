@@ -32,10 +32,34 @@ var Flags = []cli.Flag{
 		EnvVars: []string{"PERSONAL_DATA_NODE_APP_DESCRIPTION"},
 	},
 	&cli.StringFlag{
-		Name:    "nw-app-address-suffix",
-		Usage:   "it is unique address suffix specific for this personal data node",
-		Value:   "nw",
-		EnvVars: []string{"PERSONAL_DATA_NODE_APP_ADDRESS_SUFFIX"},
+		Name:    "nw-app-label",
+		Usage:   "it is unique label specific for this personal data node",
+		Value:   "pdn",
+		EnvVars: []string{"PERSONAL_DATA_NODE_APP_LABEL"},
+	},
+	&cli.Int64Flag{
+		Name:    "nw-app-network-warden-id",
+		Usage:   "it is ID of the warden of the network",
+		Value:   0,
+		EnvVars: []string{"PERSONAL_DATA_NODE_APP_NW_ID"},
+	},
+	&cli.Int64Flag{
+		Name:    "nw-app-accounts-capacity",
+		Usage:   "it is the account's capacity of the personal data node",
+		Value:   0,
+		EnvVars: []string{"PERSONAL_DATA_NODE_APP_ACCOUNTS_CAPACITY"},
+	},
+	&cli.Int64Flag{
+		Name:    "nw-app-crawl-rate-limit-max-requests",
+		Usage:   "it is rate limit max crawl requests amount",
+		Value:   1000,
+		EnvVars: []string{"PERSONAL_DATA_NODE_APP_CRAWL_RATE_LIMIT_MAX_REQUESTS"},
+	},
+	&cli.DurationFlag{
+		Name:    "nw-app-crawl-rate-limit-interval",
+		Usage:   "it is rate limit interval for crawl requests",
+		Value:   time.Minute,
+		EnvVars: []string{"PERSONAL_DATA_NODE_APP_CRAWL_RATE_LIMIT_INTERVAL"},
 	},
 	&cli.Int64Flag{
 		Name:    "nw-app-rate-limit-max-requests",

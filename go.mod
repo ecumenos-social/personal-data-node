@@ -6,7 +6,7 @@ require (
 	github.com/ecumenos-social/grpc-utils v0.0.2
 	github.com/ecumenos-social/schemas v0.0.21
 	github.com/ecumenos-social/toolkit v0.0.4
-	github.com/ecumenos-social/toolkitfx v0.1.2
+	github.com/ecumenos-social/toolkitfx v0.1.4
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.22.0
 	github.com/heptiolabs/healthcheck v0.0.0-20211123025425-613501dd5deb
 	github.com/joho/godotenv v1.5.1
