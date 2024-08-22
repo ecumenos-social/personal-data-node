@@ -41,3 +41,7 @@ check: ## Compile everything, checking syntax (does not output binaries)
 .PHONY: run-core
 run-core: .env
 	go run cmd/core/*.go run
+
+.PHONY: run-admin
+run-admin: .env
+	go run cmd/admin/*.go run
