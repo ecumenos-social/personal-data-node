@@ -45,3 +45,7 @@ run-core: .env
 .PHONY: run-admin
 run-admin: .env
 	go run cmd/admin/*.go run
+
+.PHONY: run-blockchain-peer
+run-blockchain-peer: .env
+	go run cmd/blockchain-peer/*.go run
