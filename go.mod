@@ -4,7 +4,7 @@ go 1.21.5
 
 require (
 	github.com/ecumenos-social/grpc-utils v0.0.2
-	github.com/ecumenos-social/schemas v0.0.27
+	github.com/ecumenos-social/schemas v0.0.28
 	github.com/ecumenos-social/toolkit v0.0.4
 	github.com/ecumenos-social/toolkitfx v0.1.4
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.22.0
